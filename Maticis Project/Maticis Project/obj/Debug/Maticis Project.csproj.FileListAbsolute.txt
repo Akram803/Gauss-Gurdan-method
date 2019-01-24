@@ -1,0 +1,7 @@
+C:\Users\Akram\source\repos\Maticis Project\Maticis Project\bin\Debug\Maticis Project.exe.config
+C:\Users\Akram\source\repos\Maticis Project\Maticis Project\bin\Debug\Maticis Project.exe
+C:\Users\Akram\source\repos\Maticis Project\Maticis Project\bin\Debug\Maticis Project.pdb
+C:\Users\Akram\source\repos\Maticis Project\Maticis Project\obj\Debug\Maticis Project.csprojAssemblyReference.cache
+C:\Users\Akram\source\repos\Maticis Project\Maticis Project\obj\Debug\Maticis Project.csproj.CoreCompileInputs.cache
+C:\Users\Akram\source\repos\Maticis Project\Maticis Project\obj\Debug\Maticis Project.exe
+C:\Users\Akram\source\repos\Maticis Project\Maticis Project\obj\Debug\Maticis Project.pdb
