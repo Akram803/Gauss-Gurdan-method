@@ -29,7 +29,6 @@ namespace Maticis_Project
 
             }
         }
-
         static void print(double[,] p)
         {
             int n = p.GetLength(0),
@@ -43,14 +42,13 @@ namespace Maticis_Project
                     s = Convert.ToString(p[i, j]);
                     for (int q = 0; q < 4 - s.Length; q++)
                         Console.Write(" ");
-
+                    
                     Console.Write(p[i, j] + " ");
                 }
                 Console.WriteLine("  |");
             }
             Console.WriteLine("\n");
         }
-
         static void Excange(double[,] a, int f, int s)
         {
             for (int j = 0; j < a.GetLength(1); j++)
@@ -61,14 +59,12 @@ namespace Maticis_Project
             Console.WriteLine("Swap R{0} , R{1}", f+1, s+1);
             print(a);
         }
-
         static void swap(ref double x,ref double y)
         {
             double temp = x;
             x = y;
             y = temp;
         }
-
         static void div_rowbycons(double[,] a, int r, double c)
         {
                 if (c != 0)
@@ -81,7 +77,6 @@ namespace Maticis_Project
                 Console.WriteLine("R{0} = R{0} / {1}",r+1 , c+1);
             print(a);
         }
-
         static void Add_muledrowTOother(double[,] a, int sender, double c, int resever)
         {
                 for (int j = 0; j < a.GetLength(1); j++)
@@ -90,7 +85,6 @@ namespace Maticis_Project
             Console.WriteLine("R{0} = {1}R{2} +  R{0}", resever+1, c+1, sender+1);
             print(a);
         }
-
         static void Nosolution(double[,] a, int r)
         {
             for(int i=0; i< a.GetLength(1); i++)
@@ -102,7 +96,6 @@ namespace Maticis_Project
             }
             Console.WriteLine("  Is Impossible\n");
         }
-
         static void printsolution(double[,] a, int c)
         {
             for(int i = 0; i < a.GetLength(0); i++)
@@ -110,7 +103,6 @@ namespace Maticis_Project
                 Console.WriteLine("x{0} = {1} .",i+1,a[i,c]);
             }
         }
-
         static void Solver()
         {
             int equations;
@@ -125,7 +117,6 @@ namespace Maticis_Project
             read(test);
             Console.WriteLine("\nyour system is...");
             print(test);
-
             ////////////////////////////////////////////////////////////////////////////////////////////////////
             int c = 0;
             do
@@ -145,7 +136,6 @@ namespace Maticis_Project
                         }
                     }
                 }
-
                 if (nonzero)
                 {
                     div_rowbycons(test, c, test[c, c]);
@@ -163,7 +153,6 @@ namespace Maticis_Project
             } while (c < test.GetLength(1) - 1);
             Console.WriteLine("^_^  ^_^  ^_^\n\n");
             //////////////////////////////////////////////////////////////////////////////////////////////////////
-
             do
             {
                 c--;
@@ -199,7 +188,6 @@ namespace Maticis_Project
                 printsolution(test, c);
             }
         }
-
         static void Main(string[] args)
         {
             Console.WriteLine("Linear Equation System Solver by Gauss Gurdan Method");
